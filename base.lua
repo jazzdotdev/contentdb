@@ -1,6 +1,6 @@
 contentdb = {
   stores = {
-    home = "contentdb/home/"
+    home = "content/home/"
   }
 }
 
@@ -18,11 +18,11 @@ function model_metatable:validate (object)
 end
 
 -- Add all directories in contentdb to the stores table
-for entry in fs.entries("contentdb/") do
-  if fs.metadata("contentdb/" .. entry).type == "directory" then
-    contentdb.stores[entry] = "contentdb/" .. entry .. "/"
+for entry in fs.entries("content/") do
+  if fs.metadata("content/" .. entry).type == "directory" then
+    contentdb.stores[entry] = "content/" .. entry .. "/"
   end
 end
 
 
-fs.create_dir("contentdb/home", true)
+fs.create_dir("content/home", true)

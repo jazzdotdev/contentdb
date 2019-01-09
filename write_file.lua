@@ -3,7 +3,7 @@ function contentdb.write_file (store_id, file_uuid, fields, body_param)
 
   local dir = contentdb.stores[store_id]
   if not dir then
-    dir = "contentdb/" .. store_id .. "/"
+    dir = "content/" .. store_id .. "/"
     fs.create_dir(dir, true)
     contentdb.stores[store_id] = dir
   end
