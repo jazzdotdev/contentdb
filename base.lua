@@ -4,6 +4,8 @@ contentdb = {
   }
 }
 
+_G.db_path = _G.app_path.."/content/"
+
 -- Methods for the model class
 local model_metatable = {}
 model_metatable.__index = model_metatable
@@ -18,11 +20,11 @@ function model_metatable:validate (object)
 end
 
 -- Add all directories in contentdb to the stores table
-for entry in fs.entries("content/") do
-  if fs.metadata("content/" .. entry).type == "directory" then
+for entry in fs.entries(db_path) do
+  if fs.metadata(db_path .. entry).type == "directory" then
     contentdb.stores[entry] = "content/" .. entry .. "/"
   end
 end
 
 
-fs.create_dir("content/home", true)
+fs.create_dir(db_path .. "/home", true)
