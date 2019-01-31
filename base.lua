@@ -1,6 +1,5 @@
 contentdb = {
   stores = {
-    home = "content/home/"
   }
 }
 
@@ -25,6 +24,3 @@ for entry in fs.entries(db_path) do
     contentdb.stores[entry] = "content/" .. entry .. "/"
   end
 end
-
-
-fs.create_dir(db_path .. "/home", true)
