@@ -1,6 +1,10 @@
 function contentdb.documents (store_id)
   if store_id then
     local dir = contentdb.stores[store_id]
+
+    if not dir then
+      error("Store " .. store_id .. " does not exist")
+    end
   
     local f = fs.entries(dir)
   

@@ -6,6 +6,7 @@ require "contentdb.read_document"
 require "contentdb.documents"
 require "contentdb.walk_documents"
 require "contentdb.write_file"
+require "contentdb.scan_stores"
 local valua = require "third-party.valua"
 
 return contentdb
