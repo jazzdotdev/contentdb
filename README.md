@@ -2,7 +2,7 @@
 
 `contentdb` is a [document store](https://en.wikipedia.org/wiki/Document-oriented_database) database library that is similar to [CouchDB](https://en.wikipedia.org/wiki/Apache_CouchDB) and [MongoDB](https://en.wikipedia.org/wiki/MongoDB).
 
-This project follows the general "[NoSQL](https://en.wikipedia.org/wiki/NoSQL)" trend away from table-oriented databases, usually toward document-oriented or otherwise graph-oriented.  It will also support outline-oriented databses, like [OPML](https://en.wikipedia.org/wiki/OPML), which facilitate great data management interfaces, like [WorkFlowy](http://workflowy.com) and [OmniOutliner](https://www.omnigroup.com/omnioutliner/).
+This project follows the general "[NoSQL](https://en.wikipedia.org/wiki/NoSQL)" trend away from table-oriented databases, usually toward document-oriented or otherwise graph-oriented.  It will also support outline-oriented databses, like [OPML](https://en.wikipedia.org/wiki/OPML) and [YAML](https://en.wikipedia.org/wiki/YAML), which facilitate great data management interfaces in simple text editors and even more powerful UIs, like [WorkFlowy](http://workflowy.com) and [OmniOutliner](https://www.omnigroup.com/omnioutliner/).
 
 What makes ContentDB significantly different from other databases is that it uses a [file](https://en.wikipedia.org/wiki/Computer_file) to store each "record", called a document, in a specified format.  This is similar to [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework)-style [XML databases](https://en.wikipedia.org/wiki/XML_database).
 
