@@ -14,7 +14,7 @@ To massively improve performance and scalability, [Tantivy](https://github.com/t
 
 ContentDB combines one structured and one unstructured data format.  Headers use [SCL](https://github.com/Keats/scl), and bodies use [Markdown](https://en.wikipedia.org/wiki/Markdown) or Lua.
 
-Header field values provide a mechanism to represent attributes of world entities in virtual document texts.  Relationship fields work by using the target's model for its field.  You can see this implemented in Python in the pelican plugin above.
+Header field values provide a mechanism to represent attributes of world entities in virtual document texts.  Relationship fields work by using the target's model for its field.  You can see this implemented in Python in the pelican plugin above and some more background info [about using antisymmetric relationships](https://github.com/getzola/zola/issues/314).
 
 Default ID is UUIDv4, but this will soon shift to [NanoID](https://github.com/ai/nanoid).  See https://github.com/foundpatterns/contentdb-lua/issues/17
 
